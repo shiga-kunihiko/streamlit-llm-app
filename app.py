@@ -22,8 +22,7 @@ user_input = st.text_input("質問を入力してください：")
 # 専門家選択ラジオボタン
 expert_type = st.radio("専門家の種類を選択してください：", ("A:不動産", "B:マーケティング"))
 
-# LangChainとOpenAIのインポート
-from langchain.llms import OpenAI
+from langchain_openai import OpenAI
 import os
 
 # OpenAI APIキーの取得
